@@ -1,0 +1,11 @@
+[{:itonami.blueprint/social-impact [:food-security :household-livelihood :resource-stewardship]
+  :itonami.blueprint/domain :agriculture-natural-resources/subsistence-fishing-hunting-trapping-gathering-logistics-coordination
+  :itonami.blueprint/required-technologies [:robotics :identity :audit-ledger]
+  :itonami.blueprint/isco-08 "6340"
+  :itonami.blueprint/name "Subsistence Fishing, Hunting, Trapping and Gathering Logistics Coordination Practice"
+  :itonami.blueprint/governor :subsistence-harvest-governor
+  :itonami.blueprint/robotics true
+  :db/id -1
+  :itonami.blueprint/status :public-oss
+  :itonami.blueprint/id "cloud-itonami-isco-6340"
+  :itonami.blueprint/license "AGPL-3.0-or-later"}]
