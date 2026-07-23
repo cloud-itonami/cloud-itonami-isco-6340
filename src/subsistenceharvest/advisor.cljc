@@ -29,7 +29,9 @@
   scope-exclusion scan looks for (\"fire the weapon\", \"spring the
   trap\", \"make the fishing execution decision\", \"make the kill
   decision\", etc.) — governor_test.clj asserts this holds for every op
-  this advisor can produce.")
+  this advisor can produce."
+  (:require #?(:clj  [clojure.edn :as edn]
+               :cljs [cljs.reader :as edn])))
 
 (defprotocol Advisor
   (-advise [advisor store request] "request -> proposal map"))
@@ -98,7 +100,7 @@
 
 (defn- parse-proposal [content]
   (try
-    (let [p (read-string content)]
+    (let [p (edn/read-string content)]
       (if (map? p)
         (assoc p :effect :propose)
         {:op :unknown :effect :propose :confidence 0.0 :stake :high
