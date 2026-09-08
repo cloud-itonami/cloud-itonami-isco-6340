@@ -128,7 +128,7 @@
        registered `:max-supply-order-cost`.
    11. low confidence (< `confidence-floor`)."
   (:require [subsistenceharvest.store :as store]
-            [clojure.string :as str]))
+            [kotoba.lang.text :as str]))
 
 (def confidence-floor 0.6)
 
@@ -176,7 +176,7 @@
    "makes the trapping execution decision" "making the trapping execution decision"])
 
 (defn- scope-excluded-text? [s]
-  (let [s (str/lower-case (or s ""))]
+  (let [s (str/lower (or s ""))]
     (boolean (some #(str/includes? s %) subsistence-execution-scope-exclusion-phrases))))
 
 (defn- needs-area? [op]
