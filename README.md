@@ -31,7 +31,7 @@ scope-excluded-op list as defense-in-depth) that hard-blocks any op
 outside the four above, and a defense-in-depth text scan that
 hard-blocks any proposal whose rationale claims to finalize or execute
 one of those actions. See
-[`src/subsistenceharvest/governor.cljc`](src/subsistenceharvest/governor.cljc)'s
+[`src/subsistenceharvest/governor.cljk`](src/subsistenceharvest/governor.cljk)'s
 namespace docstring for the full structural argument. Any observation
 that MAY warrant food-security, resource-depletion or safety attention
 is surfaced ONLY via `:flag-livelihood-concern`, which always escalates
