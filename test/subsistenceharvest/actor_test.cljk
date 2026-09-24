@@ -1,5 +1,5 @@
 (ns subsistenceharvest.actor-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [subsistenceharvest.actor :as actor]
             [subsistenceharvest.store :as store]))
 
