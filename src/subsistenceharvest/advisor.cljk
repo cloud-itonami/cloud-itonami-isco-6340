@@ -30,7 +30,7 @@
   trap\", \"make the fishing execution decision\", \"make the kill
   decision\", etc.) — governor_test.clj asserts this holds for every op
   this advisor can produce."
-  (:require #?(:clj  [clojure.edn :as edn]
+  (:require #?(:clj  [kotoba.lang.edn :as edn]
                :cljs [cljs.reader :as edn])))
 
 (defprotocol Advisor
