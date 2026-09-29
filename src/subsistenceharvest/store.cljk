@@ -1,7 +1,7 @@
 (ns subsistenceharvest.store
   "SSoT for the ISCO-08 6340 subsistence fishing/hunting/trapping/
   gathering household record-keeping/logistics coordination actor
-  (itonami actor pattern, ADR-2607121000 / CLAUDE.md Actors section;
+  (itonami actor pattern, ADR-2607121000 / AGENTS.md Actors section;
   README's 'Robotics premise' — a logistics/record-keeping
   coordination robot performs catch/harvest record entry (post-hoc
   metadata only), equipment-maintenance scheduling and non-weapon
